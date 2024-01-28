@@ -1,0 +1,148 @@
+.container {
+  background-color: #f5f5f5;
+}
+
+.image {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+
+.image img {
+  display: block;
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.description {
+  text-align: center;
+}
+
+.options {
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  display: none;
+}
+
+.popup input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.popup button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.popup button:focus {
+  outline: none;
+}
+
+.popup button:active {
+  background-color: gray;
+}
+
+.popup input:focus {
+  outline: none;
+}
+
+.popup input:valid {
+  border: 1px solid green;
+}
+
+.popup input:invalid {
+  border: 1px solid red;
+}
+
+.popup input:invalid:focus {
+  border: 1px solid red;
+  box-shadow: 0 0 5px 1px red;
+}
+
+.popup input:valid:focus {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 1px green;
+}
+
+.popup input:placeholder-shown:not(:focus) {
+  border: 1px solid gray;
+}
+
+.popup input:placeholder-shown:not(:focus):valid {
+  border: 1px solid green;
+}
+
+.popup input:placeholder-shown:not(:focus):invalid {
+  border: 1px solid red;
+}
+
+.popup input:placeholder-shown:not(:focus):invalid:focus {
+  border: 1px solid red;
+  box-shadow: 0 0 5px 1px red;
+}
+
+.popup input:placeholder-shown:not(:focus):valid:focus {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 1px green;
+}
+
+.popup input:placeholder-shown:focus:valid {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 1px green;
+}
+
+.popup input:placeholder-shown:focus:invalid {
+  border: 1px solid red;
+  box-shadow: 0 0 5px 1px red;
+}
+.bottom-text {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.bottom-text a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bottom-text a:hover {
+  color: #555;
+}
